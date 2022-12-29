@@ -1,6 +1,10 @@
 body {
   background: linear-gradient(to right, #78a7ba 0%, #385d6c 50%, #78a7ba 99%);
 }
+#login{
+  padding: 85px;
+  
+}
 .reg-form {
   font-family: sans-serif;
   width: 650px;
