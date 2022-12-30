@@ -1,8 +1,10 @@
 const express = require("express");
-const userRoute =require("./Routes/userRoutes.js")
+const userRoute = require("./Routes/userRoutes.js");
 const app = express();
-const bodyParser= require("body-parser");
-const PORT=4000;
+var cors = require("cors");
+app.use(cors());
+const bodyParser = require("body-parser");
+const PORT = 4000;
 app.use(bodyParser.json());
 app.use(express.urlencoded());
 
