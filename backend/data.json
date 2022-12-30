@@ -1,1 +1,16 @@
-[{"fName":"Ankit","lName":"Singh","email":"ankti@indx.ai","password":"password","textArea":"Hello"}]
+[
+  {
+    "fName": "Ankit",
+    "lName": "Singh",
+    "email": "ankti@indx.ai",
+    "password": "password",
+    "textArea": "Hello"
+  },
+  {
+    "fName": "Ankitsingh",
+    "lName": "Bisht",
+    "email": "ankit@indx.ai",
+    "password": "@nkitSingh78631",
+    "textArea": ""
+  }
+]

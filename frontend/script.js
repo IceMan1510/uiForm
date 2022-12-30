@@ -17,7 +17,6 @@ var checkPwd = (str) => {
 
 function toast() {
   // Get the snackbar DIV
-  
 
   // Add the "show" class to DIV
   snackBar.className = "show";
@@ -46,28 +45,23 @@ form.addEventListener("submit", (e) => {
         console.log(lName);
         console.log("Password Verification Passed");
         console.log(textArea);
-        
-        const params={
+
+        const params = {
           fName,
           lName,
           email,
           password,
-          textArea
-        }
-        console.log(params)
+          textArea,
+        };
+        console.log(params);
         const http = new XMLHttpRequest();
         http.open("POST", "http://127.0.0.1:4000/user/register");
         http.setRequestHeader("Content-type", "application/json");
         http.send(JSON.stringify(params));
         http.onload = function () {
-        if(http.responseText==="False"){
-        snackBar.innerText = `Email already exists`;
-        toast();}
-        else{
-          snackBar.innerText = `Thank you for registration ${fName}`;
-        toast();
-        }
-    };
+          snackBar.innerText = `${http.response}`;
+          toast();
+        };
         document.getElementById("form").reset();
       } else {
         snackBar.innerText = "Password match failed";
@@ -80,6 +74,3 @@ form.addEventListener("submit", (e) => {
     }
   }
 });
-
-
-
